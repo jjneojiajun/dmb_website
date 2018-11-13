@@ -70,10 +70,10 @@
                     <div class="col-md-6">
                         <label>Fixed or Floating Rates*</label>
                     </div>
-                    <div class="col-md-6">
-                        <input type="radio" name="rates" value="Fixed"> Fixed
-                        <input type="radio" name="rates" value="Floating"> Floating
-                        <input type="radio" name="rates" value="Both"> Both
+                    <div class="col-md-6 rates">
+                        <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
+                        <input type="radio" id="r2" name="rate" value="float_rate"> Floating
+                        <input type="radio" id="r3" name="rate" value="both"> Both
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <input type="text" id="loan_amount" />
+                        <input type="text" id="loan_amount" required/>
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@
                         <label>Current Interest Rates*:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="interest_rates" />
+                        <input type="text" id="interest_rates" required/>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                         <label>Loan Tenure* :</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="loan_tenure" />
+                        <input type="text" id="loan_tenure" required/>
                     </div>
                 </div>
                 
@@ -126,75 +126,10 @@
                     <h2>Top 6 Bank Rates</h2>
                     <p class="long-copy" id="pmt_rate"></p>
 
-                
-                    <div class="col-sm-4 col-md-2">
-                        <div class="thumbnail" id="thumbnail1">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
-                                        role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-sm-4 col-md-2">
-                        <div class="thumbnail" id="thumbnail2">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
-                                        role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-sm-4 col-md-2">
-                        <div class="thumbnail" id="thumbnail3">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
-                                        role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 col-md-2">
-                        <div class="thumbnail" id="thumbnail4">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
+                    <div id="root">
+
                     </div>
 
-                    <div class="col-sm-4 col-md-2">
-                        <div class="thumbnail" id="thumbnail5">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-2">
-                        <div class="thumbnail" id="thumbnail6">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

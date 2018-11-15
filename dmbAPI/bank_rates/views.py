@@ -3,6 +3,8 @@ from .serializers import BankRatesSerializer
 from rest_framework import viewsets
 from django_filters.rest_framework import DjangoFilterBackend
 from django_filters import rest_framework as filters
+from django.http import HttpResponse
+from django.template.loader import get_template
 
 
 class BankFilter(filters.FilterSet):
@@ -19,3 +21,5 @@ class BankRatesViewSet(viewsets.ModelViewSet):
 
     filter_backends = (DjangoFilterBackend,)
     filter_class = BankFilter
+
+

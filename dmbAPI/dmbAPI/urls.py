@@ -18,9 +18,12 @@ from django.conf.urls import include, url
 from rest_framework.routers import DefaultRouter
 from django.conf import settings
 from django.views.static import serve
+from django.views.generic import TemplateView
 
 import blog.urls as blogUrls
 import bank_rates.urls as bankRatesUrls
+
+from contact_us import views
 
 routeLists = [
     blogUrls.routeList,
@@ -34,7 +37,11 @@ for routeList in routeLists:
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^api/', include(router.urls))
+    url(r'^api/', include(router.urls)),
+    url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^new_financing/', TemplateView.as_view(template_name="new_financing.html")),
+    url(r'^refinancing/', TemplateView.as_view(template_name="refinancing.html")),
+    url(r'^contact/$', views.contact, name='contact'),
 ]
 
 if settings.DEBUG:

@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <h2>Refinancing Calculator</h2>
+
+        <form name="refinancing_calculator" action="javascript:refinancingCalculator();">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Residential Type:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="radio" name="residential" value="Private Residential"> Private Residential
+                    <input type="radio" name="residential" value="HDB"> HDB
+                    <input type="radio" name="residential" value="Commerical"> Commerical
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Fixed or Floating Rates*</label>
+                </div>
+                <div class="col-md-6 rates">
+                    <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
+                    <input type="radio" id="r2" name="rate" value="float_rate"> Floating
+                    <input type="radio" id="r3" name="rate" value="both"> Both
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Existing Loan Amount*</label>
+                </div>
+
+                <div class="col-md-6">
+                    <input type="text" id="loan_amount" required />
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Current Interest Rates*:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="interest_rates" required />
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Loan Tenure* :</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="loan_tenure" required />
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row center">
+                <input type="submit" value="Compare Rates" />
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="section-steps" id="bank-rates">
+    <div class="container-fluid">
+        <div class="row">
+            <h2>Top 6 Bank Rates</h2>
+            <p class="long-copy" id="pmt_rate"></p>
+
+            <div id="root">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

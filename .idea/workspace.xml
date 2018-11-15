@@ -2,20 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4a1a9df-f1c9-459b-86a0-713b4385dcf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dmbAPI/blog/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dmbAPI/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DollarAndMortgageCompany.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DollarAndMortgageCompany.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmbAPI/templates/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmbAPI/templates/contact_us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmbAPI/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmbAPI/templates/new_financing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmbAPI/templates/refinancing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/bank_rates/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/bank_rates/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/architecture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/static/css/images/architecture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/static/css/vendor/ionicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/migrations/0002_auto_20181112_0240.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/migrations/0003_auto_20181112_0448.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dmbAPI/bank_rates/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/bank_rates/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/blog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/blog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/blog/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmbAPI/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refinancing.html" beforeDir="false" afterPath="$PROJECT_DIR$/refinancing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/dmbAPI/static/js/calculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_financing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/refinancing.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,43 +68,48 @@
     <session id="1132154024">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="5" />
+          <entry key="css" value="1" />
+          <entry key="html" value="18" />
           <entry key="jpg" value="1" />
           <entry key="js" value="2" />
-          <entry key="py" value="37" />
+          <entry key="py" value="59" />
           <entry key="sqlite3" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="18" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="37" />
+          <entry key="Python" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="127" />
+          <entry key="css" value="57" />
+          <entry key="html" value="1246" />
           <entry key="js" value="1305" />
-          <entry key="py" value="4847" />
+          <entry key="py" value="6671" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="127" />
+          <entry key="CSS" value="57" />
+          <entry key="HTML" value="1246" />
           <entry key="JavaScript" value="1305" />
-          <entry key="Python" value="4847" />
+          <entry key="Python" value="6671" />
         </counts>
       </usages-collector>
     </session>
@@ -101,8 +119,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="278">
+              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -110,63 +137,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="e#630#662#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <marker date="1542005911237" expanded="true" signature="127:132" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refinancing.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-              <folding>
-                <marker date="1542013330317" expanded="true" signature="87:92" ph="..." />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/calculator.js">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="358">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/templates/contact_us.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/blog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/urls.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <marker date="1542211233135" expanded="true" signature="224:229" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmbAPI/templates/new_financing.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -176,6 +211,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -183,6 +219,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>bank_ratess</find>
+      <find>STATIC</find>
+      <find>static</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,27 +229,41 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dmbAPI/blog/models.py" />
         <option value="$PROJECT_DIR$/dmbAPI/blog/admin.py" />
         <option value="$PROJECT_DIR$/dmbAPI/bank_rates/admin.py" />
-        <option value="$PROJECT_DIR$/dmbAPI/blog/serializers.py" />
         <option value="$PROJECT_DIR$/dmbAPI/blog/views.py" />
-        <option value="$PROJECT_DIR$/dmbAPI/blog/urls.py" />
-        <option value="$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py" />
         <option value="$PROJECT_DIR$/dmbAPI/bank_rates/serializers.py" />
-        <option value="$PROJECT_DIR$/dmbAPI/bank_rates/urls.py" />
-        <option value="$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/refinancing.html" />
-        <option value="$PROJECT_DIR$/dmbAPI/bank_rates/views.py" />
         <option value="$PROJECT_DIR$/dmbAPI/bank_rates/models.py" />
         <option value="$PROJECT_DIR$/js/calculator.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/static/index.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/static/base.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/static/new_financing.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/static/refinancing.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/bank_rates/urls.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/bank_rates/views.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/templates/new_financing.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/static/css/style.css" />
+        <option value="$PROJECT_DIR$/dmbAPI/templates/index.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/blog/models.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/blog/serializers.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/templates/blog.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/contact_us/forms.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/contact_us/urls.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/blog/urls.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/contact_us/views.py" />
+        <option value="$PROJECT_DIR$/dmbAPI/templates/contact_us.html" />
+        <option value="$PROJECT_DIR$/dmbAPI/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="640" />
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="640" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectView">
@@ -242,18 +294,25 @@
               <item name="dmb_website" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmb_website" type="462c0819:PsiDirectoryNode" />
               <item name="dmbAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmb_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmb_website" type="462c0819:PsiDirectoryNode" />
+              <item name="dmbAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="contact_us" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmb_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmb_website" type="462c0819:PsiDirectoryNode" />
+              <item name="dmbAPI" type="462c0819:PsiDirectoryNode" />
               <item name="dmbAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dmb_website" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmb_website" type="462c0819:PsiDirectoryNode" />
               <item name="dmbAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmb_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmb_website" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,8 +321,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dmbAPI/blog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dmbAPI/templates" />
+      <recent name="$PROJECT_DIR$/dmbAPI" />
+      <recent name="$PROJECT_DIR$/dmbAPI/bank_rates" />
+      <recent name="$PROJECT_DIR$/dmbAPI/static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -291,21 +362,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="24" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27402702" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.112787925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -349,26 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -385,55 +436,6 @@
     <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="19" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new_financing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="191" column="20" selection-start-line="191" selection-start-column="20" selection-end-line="191" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///anaconda/envs/fiscalhive/lib/python3.5/site-packages/django_filters/filterset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -441,45 +443,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Resync_Tech_Drive/01-JiaJun/03-Solar data analysis/codes/hourly_breakdowns.py" />
     <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1542005911237" expanded="true" signature="127:132" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refinancing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -487,23 +455,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda/envs/fiscalhive/lib/python3.5/site-packages/django/contrib/staticfiles/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="51" selection-start-line="51" selection-end-line="52" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="1" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/static/js/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/templates/refinancing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/templates/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-end-line="22" />
           <folding>
-            <marker date="1542013330317" expanded="true" signature="87:92" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Resync_Tech_Drive/01-JiaJun/03-Solar data analysis/codes/hourly_breakdowns.py">
+    <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="34" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1542209154849" expanded="true" signature="57:62" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/calculator.js">
+    <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/templates/new_financing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/dmbAPI/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/bank_rates/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/dmbAPI/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/contact_us/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1542211233135" expanded="true" signature="224:229" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/templates/contact_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmbAPI/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
         </state>
       </provider>
     </entry>

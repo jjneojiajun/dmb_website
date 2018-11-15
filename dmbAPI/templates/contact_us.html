@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <p class="long-copy">Please Feel Free to Contact Us Today!</p>
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="contact_us">
+                <form role="form" action="" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Submit</button>
+                </form>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

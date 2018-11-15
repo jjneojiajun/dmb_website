@@ -1,0 +1,86 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <title>DollarAndMortgageCompany</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">Dollar Back Mortgage</a>
+            </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculator <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/new_financing/">New Financing Calculator</a></li>
+                        <li><a href="/refinancing">Refinancing Calculator</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <footer>
+            <div class="row">
+                <div class="col-md-6 center">
+                    <ul class="footer-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Calculators</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 center">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="social-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" class="social-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin" class="social-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="social-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright © 2018 DollarAndMortgageCompany. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+        <script src="{% static "js/calculator.js" %}"></script>
+  </body>
+</html>

@@ -47,7 +47,7 @@ class BankRates(models.Model):
 
     bank_name = models.CharField(max_length=109, blank=False, default='')
     loan_type = models.CharField(max_length=10, choices=LOAN_TYPE_CHOICES, default=FIXED_RATE)
-    property_type = models.CharField(max_length=2, choices=PROPERTY_TYPE_CHOICES, default=PRIVATE)
+    property_type = models.CharField(max_length=20, choices=PROPERTY_TYPE_CHOICES, default=PRIVATE)
     bank_image = models.CharField(max_length=200 , choices=BANK_IMAGE_CHOICES, default='')
     loan_tenure = models.IntegerField()
     interest_rates = models.FloatField()

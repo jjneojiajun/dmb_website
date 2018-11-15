@@ -11,9 +11,15 @@
                     <label>Property Type*</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="radio" name="residential" value="Private Residential"> Private Residential
-                    <input type="radio" name="residential" value="HDB"> HDB
-                    <input type="radio" name="residential" value="Commerical"> Commerical
+                    <div class="col-md-5">
+                        <input type="radio" name="residential" value=""> Private Residential
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="residential" value="HDB"> HDB
+                    </div>
+                    <div class="col-md-"4>
+                        <input type="radio" name="residential" value="Commerical"> Commerical
+                    </div>
                 </div>
             </div>
 
@@ -24,8 +30,12 @@
                     <label>Construction Status*</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="radio" name="construction_status" value="completed"> Completed
-                    <input type="radio" name="construction_status" value="uncompleted"> Uncompleted
+                    <div class="col-md-6">
+                        <input type="radio" name="construction_status" value="completed"> Completed
+                    </div>
+                    <div class="col-md-6">
+                        <input type="radio" name="construction_status" value="uncompleted"> Uncompleted
+                    </div>
                 </div>
             </div>
 
@@ -36,8 +46,13 @@
                     <label>Property Purchase* :</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="radio" name="property_purchase" value="yes">Yes
-                    <input type="radio" name="property_purchase" value="no">No
+                    <div class="col-md-6">
+                        <input type="radio" name="property_purchase" value="yes">Yes
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="radio" name="property_purchase" value="no">No
+                    </div>
                 </div>
             </div>
 
@@ -47,10 +62,18 @@
                 <div class="col-md-6">
                     <label>Fixed or Floating Rates*</label>
                 </div>
-                <div class="col-md-6">
-                    <input type="radio" name="rates" value="Fixed"> Fixed
-                    <input type="radio" name="rates" value="Floating"> Floating
-                    <input type="radio" name="rates" value="Both"> Both
+                <div class="col-md-6 rates">
+                    <div class="col-md-4">
+                        <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="radio" id="r2" name="rate" value="float_rate"> Floating
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="radio" id="r3" name="rate" value="both"> Both
+                    </div>
                 </div>
             </div>
 
@@ -62,7 +85,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <input type="text" id="loan_amount" />
+                    <input type="text" class="form-control" id="loan_amount" />
                 </div>
             </div>
 
@@ -73,14 +96,14 @@
                     <label>Loan Tenure (Years)* :</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" id="loan_tenure" />
+                    <input type="text" class="form-control" id="loan_tenure" />
                 </div>
             </div>
 
-            <br>
+            <br/>
 
             <div class="row center">
-                <input type="submit" value="Compare Rates" />
+                <button type="submit" class="btn btn-primary">Compare Rates</button>
             </div>
         </form>
     </div>

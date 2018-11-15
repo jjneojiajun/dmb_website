@@ -11,9 +11,15 @@
                     <label>Residential Type:</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="radio" name="residential" value="Private Residential"> Private Residential
-                    <input type="radio" name="residential" value="HDB"> HDB
-                    <input type="radio" name="residential" value="Commerical"> Commerical
+                    <div class="col-md-5">
+                        <input type="radio" name="residential" value="Private Residential"> Private Residential
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="residential" value="HDB"> HDB
+                    </div>
+                    <div class="col-md-"4>
+                        <input type="radio" name="residential" value="Commerical"> Commerical
+                    </div>
                 </div>
             </div>
 
@@ -24,9 +30,17 @@
                     <label>Fixed or Floating Rates*</label>
                 </div>
                 <div class="col-md-6 rates">
-                    <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
-                    <input type="radio" id="r2" name="rate" value="float_rate"> Floating
-                    <input type="radio" id="r3" name="rate" value="both"> Both
+                    <div class="col-md-4">
+                        <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="radio" id="r2" name="rate" value="float_rate"> Floating
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="radio" id="r3" name="rate" value="both"> Both
+                    </div>
                 </div>
             </div>
 
@@ -38,7 +52,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <input type="text" id="loan_amount" required />
+                    <input type="text" class="form-control" id="loan_amount" required />
                 </div>
             </div>
 
@@ -49,7 +63,7 @@
                     <label>Current Interest Rates*:</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" id="interest_rates" required />
+                    <input type="text" id="interest_rates" class="form-control" required />
                 </div>
             </div>
 
@@ -60,14 +74,14 @@
                     <label>Loan Tenure* :</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" id="loan_tenure" required />
+                    <input type="text" id="loan_tenure" class="form-control" required />
                 </div>
             </div>
 
-            <br>
+            <br/>
 
             <div class="row center">
-                <input type="submit" value="Compare Rates" />
+                <button type="submit" class="btn btn-primary">Compare Rates</button>
             </div>
         </form>
     </div>

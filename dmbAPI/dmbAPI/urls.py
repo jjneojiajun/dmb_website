@@ -38,7 +38,7 @@ for routeList in routeLists:
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
-    url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^$', views.index_contact, name='index'),
     url(r'^new_financing/', TemplateView.as_view(template_name="new_financing.html")),
     url(r'^refinancing/', TemplateView.as_view(template_name="refinancing.html")),
     url(r'^contact/$', views.contact, name='contact'),

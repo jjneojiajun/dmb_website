@@ -7,18 +7,18 @@
 
         <form name="refinancing_calculator" action="javascript:refinancingCalculator();">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Residential Type:</label>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-5">
-                        <input type="radio" name="residential" value="Private Residential"> Private Residential
+                <div class="col-md-7">
+                    <div class="col-md-4">
+                        <input type="radio" id="res1" name="residential" value="private_property"> Private Residence
                     </div>
-                    <div class="col-md-3">
-                        <input type="radio" name="residential" value="HDB"> HDB
+                    <div class="col-md-4">
+                        <input type="radio" id="res2" name="residential" value="hdb"> HDB
                     </div>
-                    <div class="col-md-"4>
-                        <input type="radio" name="residential" value="Commerical"> Commerical
+                    <div class="col-xs-12 col-md-"4>
+                        <input type="radio" id="res3" name="residential" value="commercial_property"> Commerical
                     </div>
                 </div>
             </div>
@@ -26,10 +26,10 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Fixed or Floating Rates*</label>
                 </div>
-                <div class="col-md-6 rates">
+                <div class="col-md-7 rates">
                     <div class="col-md-4">
                         <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
                     </div>
@@ -47,7 +47,7 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Existing Loan Amount*</label>
                 </div>
 
@@ -59,7 +59,7 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Current Interest Rates*:</label>
                 </div>
                 <div class="col-md-6">
@@ -70,7 +70,7 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Loan Tenure* :</label>
                 </div>
                 <div class="col-md-6">
@@ -90,8 +90,7 @@
 <section class="section-steps" id="bank-rates">
     <div class="container-fluid">
         <div class="row">
-            <h2>Top 6 Bank Rates</h2>
-            <p class="long-copy" id="pmt_rate"></p>
+            <h2>Top 5 Bank Rates</h2>
 
             <div id="root">
 

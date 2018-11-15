@@ -8,13 +8,18 @@ function newfinancingCalculator() {
 
     if (document.getElementById('r1').checked) {
         rate_type = document.getElementById('r1').value;
-        rate_type_correct = "Fixed"
     } else if (document.getElementById('r2').checked) {
         rate_type = document.getElementById('r2').value;
-        rate_type_correct = "Floating"
     } else if (document.getElementById('r3').checked) {
         rate_type = document.getElementById('r3').value;
-        rate_type_correct = "Both"
+    }
+
+    if (document.getElementById('res1').checked) {
+        property_type = document.getElementById('res1').value;
+    } else if (document.getElementById('res2').checked) {
+        property_type = document.getElementById('res2').value;
+    } else if (document.getElementById('res3').checked) {
+        property_type = document.getElementById('res3').value;
     }
 
     var myNode = document.getElementById("root");
@@ -26,10 +31,10 @@ function newfinancingCalculator() {
 
     const app = document.getElementById('root');
 
-    if rate_type != 'both' {
-        request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/?loan_type=' + String(rate_type), true);
+    if (rate_type != 'both') {
+        request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/?loan_type=' + String(rate_type) + '&loan_tenure=' + String(loan_tenure) + '&property_type=' + String(property_type), true);
     } else {
-        request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/', true)
+        request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/?&loan_tenure=' + String(loan_tenure) + '&property_type=' + String(property_type), true)
     }
 
     request.onload = function () {
@@ -37,31 +42,35 @@ function newfinancingCalculator() {
         var data = JSON.parse(this.response);
 
         if (request.status >= 200 && request.status < 400) {
-            data.slice(-6).forEach(bank => {
+            data.slice(-5).forEach(bank => {
                 const columns = document.createElement('div');
-                columns.setAttribute('class', 'col-xs-4 col-md-2');
+                columns.setAttribute('class', 'col-xs-6 col-md-4');
 
                 const thumbnail = document.createElement('div');
                 thumbnail.setAttribute('class', 'thumbnail');
 
                 const image = document.createElement('img');
                 image.src = bank.bank_image;
-                image.setAttribute('height', 200);
-                image.setAttribute('width', 100);
+                image.setAttribute('height', 500);
+                image.setAttribute('width', 250);
 
                 const type_of_rate = document.createElement('p');
-                type_of_rate.textContent = "Type of Rate " + rate_type_correct;
+                type_of_rate.textContent = "Type of Rate: " + bank.loan_type;
 
                 const loan_years = document.createElement('p');
                 loan_years.textContent = "No of Years: " + loan_tenure;
 
                 const rate = document.createElement('p');
-                rate.textContent = "Interest Rate: " + bank.interest_rates;
+                rate.textContent = "Interest Rate: " + bank.interest_rates + " %";
 
                 const pmt_display = document.createElement('p');
                 var pmt = PMT(bank.interest_rates/100/12, loan_tenure*(12), loan_amount);
                 pmt = pmt.toFixed(2);
-                pmt_display.textContent = "Monthly Payment: " + pmt;
+                pmt_display.textContent = "Monthly Payment: $" + pmt;
+
+                const button = document.createElement('button');
+                button.textContent = "More Details";
+                button.setAttribute('class', 'btn btn-primary');
 
                 app.append(columns);
                 columns.append(thumbnail);
@@ -70,6 +79,7 @@ function newfinancingCalculator() {
                 thumbnail.append(loan_years);
                 thumbnail.append(rate);
                 thumbnail.append(pmt_display);
+                thumbnail.append(button);
             });
         } else {
             console.log('error');
@@ -85,6 +95,8 @@ function refinancingCalculator(){
     var interest_rates = document.getElementById('interest_rates').value;
     var loan_tenure = document.getElementById('loan_tenure').value;
     var rate_type;
+    var rate_type_correct;
+    var property_type;
 
     if (document.getElementById('r1').checked) {
         rate_type = document.getElementById('r1').value;
@@ -92,6 +104,14 @@ function refinancingCalculator(){
         rate_type = document.getElementById('r2').value;
     } else if (document.getElementById('r3').checked) {
         rate_type = document.getElementById('r3').value;
+    }
+
+    if (document.getElementById('res1').checked) {
+        property_type = document.getElementById('res1').value;
+    } else if (document.getElementById('res2').checked) {
+        property_type = document.getElementById('res2').value;
+    } else if (document.getElementById('res3').checked) {
+        property_type = document.getElementById('res3').value;
     }
 
     var myNode = document.getElementById("root");
@@ -103,45 +123,60 @@ function refinancingCalculator(){
 
     var request = new XMLHttpRequest();
 
-    request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/?lower_interest_rate=' + String(interest_rates) + '&loan_type=' + String(rate_type), true);
+    if (rate_type != 'both') {
+        request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/?lower_interest_rate=' + String(interest_rates) + '&loan_type=' + String(rate_type) + '&loan_tenure=' + String(loan_tenure) + '&property_type=' + String(property_type), true);
+    } else {
+        request.open('GET', 'http://127.0.0.1:8000/api/bank_rates/?lower_interest_rate=' + String(interest_rates) + '&loan_tenure=' + String(loan_tenure) + '&property_type=' + String(property_type), true)
+    }
+
     request.onload = function () {
 
         var data = JSON.parse(this.response);
 
         if (request.status >= 200 && request.status < 400) {
-            data.slice(-6).forEach(bank => {
+            data.slice(-5).forEach(bank => {
                 const columns = document.createElement('div');
-                columns.setAttribute('class', 'col-xs-4 col-md-2');
+                columns.setAttribute('class', 'col-md-4 col-md-offset-1');
 
                 const thumbnail = document.createElement('div');
                 thumbnail.setAttribute('class', 'thumbnail');
 
                 const image = document.createElement('img');
                 image.src = bank.bank_image;
-                image.setAttribute('height', 200);
-                image.setAttribute('width', 100);
+                image.setAttribute('height', 500);
+                image.setAttribute('width', 250);
+
+                const div = document.createElement('p');
+                div.textContent = "";
+
 
                 const type_of_rate = document.createElement('p');
-                type_of_rate.textContent = "Type of Rate " + rate_type;
+                type_of_rate.textContent = "Type of Rate: " + bank.loan_type;
 
                 const loan_years = document.createElement('p');
                 loan_years.textContent = "No of Years: " + loan_tenure;
 
                 const rate = document.createElement('p');
-                rate.textContent = "Interest Rate: " + bank.interest_rates;
+                rate.textContent = "Interest Rate: " + bank.interest_rates + " %";
 
                 const pmt_display = document.createElement('p');
                 var pmt = PMT(bank.interest_rates/100/12, loan_tenure*(12), loan_amount);
                 pmt = pmt.toFixed(2);
-                pmt_display.textContent = "Monthly Payment: " + pmt;
+                pmt_display.textContent = "Monthly Payment: $" + pmt;
+
+                const button = document.createElement('button');
+                button.textContent = "More Details";
+                button.setAttribute('class', 'btn btn-primary');
 
                 app.append(columns);
                 columns.append(thumbnail);
                 thumbnail.append(image);
+                thumbnail.append(div);
                 thumbnail.append(type_of_rate);
                 thumbnail.append(loan_years);
                 thumbnail.append(rate);
                 thumbnail.append(pmt_display);
+                thumbnail.append(button);
             });
         } else {
             console.log('error');

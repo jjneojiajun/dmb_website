@@ -7,72 +7,75 @@
 
         <form name="refinancing_calculator" action="javascript:newfinancingCalculator();">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Property Type*</label>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-5">
-                        <input type="radio" name="residential" value=""> Private Residential
+                <div class="col-md-7">
+                    <div class="col-md-4">
+                        <input type="radio" id="res1" name="residential" style="margin-right: 5" value="private_property"> Private Residence
                     </div>
-                    <div class="col-md-3">
-                        <input type="radio" name="residential" value="HDB"> HDB
+                    <div class=" col-md-4">
+                        <input type="radio" id="res2" name="residential" style="margin-right: 5" value="hdb"> HDB
                     </div>
-                    <div class="col-md-"4>
-                        <input type="radio" name="residential" value="Commerical"> Commerical
+                    <div class="col-xs-12 col-md-"4>
+                        <input type="radio" id="res3" name="residential" style="margin-right: 5" value="commercial_property"> Commercial
                     </div>
                 </div>
             </div>
 
             <br>
 
+            <!-- What's this for? -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Construction Status*</label>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-6">
-                        <input type="radio" name="construction_status" value="completed"> Completed
+                <div class="col-md-7">
+                    <div class="col-md-4">
+                        <input type="radio" name="construction_status" style="margin-right: 5" value="completed"> Completed
                     </div>
-                    <div class="col-md-6">
-                        <input type="radio" name="construction_status" value="uncompleted"> Uncompleted
+                    <div class="col-md-4">
+                        <input type="radio" name="construction_status" style="margin-right: 5" value="uncompleted"> Uncompleted
                     </div>
                 </div>
             </div>
 
             <br>
 
+            <!-- What's this for -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Property Purchase* :</label>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-6">
-                        <input type="radio" name="property_purchase" value="yes">Yes
+                <div class="col-md-7">
+                    <div class="col-md-4">
+                        <input type="radio" name="property_purchase" style="margin-right: 10" value="yes">Yes
                     </div>
 
-                    <div class="col-md-6">
-                        <input type="radio" name="property_purchase" value="no">No
+                    <div class="col-md-4">
+                        <input type="radio" name="property_purchase" style="margin-right: 10" value="no">No
                     </div>
                 </div>
             </div>
 
             <br>
 
+
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Fixed or Floating Rates*</label>
                 </div>
-                <div class="col-md-6 rates">
+                <div class="col-md-7 rates">
                     <div class="col-md-4">
-                        <input type="radio" id="r1" name="rate" value="fixed_rate" required> Fixed
+                        <input type="radio" id="r1" name="rate" value="fixed_rate" style="margin-right: 5" required> Fixed
                     </div>
 
                     <div class="col-md-4">
-                        <input type="radio" id="r2" name="rate" value="float_rate"> Floating
+                        <input type="radio" id="r2" name="rate" value="float_rate" style="margin-right: 5"> Floating
                     </div>
 
                     <div class="col-md-4">
-                        <input type="radio" id="r3" name="rate" value="both"> Both
+                        <input type="radio" id="r3" name="rate" value="both" style="margin-right: 5"> Both
                     </div>
                 </div>
             </div>
@@ -80,7 +83,7 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Loan Amount*: </label>
                 </div>
 
@@ -92,7 +95,7 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-offset-1 col-md-4">
                     <label>Loan Tenure (Years)* :</label>
                 </div>
                 <div class="col-md-6">
@@ -112,8 +115,7 @@
 <section class="section-steps" id="bank-rates">
     <div class="container-fluid">
         <div class="row">
-            <h2>Top 6 Bank Rates</h2>
-            <p class="long-copy" id="pmt_rate"></p>
+            <h2>Top 5 Bank Rates</h2>
 
             <div id="root">
 

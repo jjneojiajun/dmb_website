@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 class BankRates(models.Model):
     """Model to key in the rates of the bank"""
-    COMMERICAL = 'CM'
-    HDB = 'HDB'
-    PRIVATE = 'PP'
+    COMMERICAL = 'commercial_property'
+    HDB = 'hdb'
+    PRIVATE = 'private_property'
 
     FIXED_RATE = 'fixed_rate'
     FLOAT_RATE = 'float_rate'
@@ -23,15 +23,15 @@ class BankRates(models.Model):
         (BOTH_RATE, 'Both'),
     )
 
-    DBS = 'http://127.0.0.1:8000/media/bank_images/dbs_logo.jpg'
+    DBS = 'http://127.0.0.1:8000/media/bank_images/dbs_logo.png'
     UOB = 'http://127.0.0.1:8000/media/bank_images/uob_logo.png'
-    SCT = 'http://127.0.0.1:8000/media/bank_images/uob_logo.png'
+    SCT = 'http://127.0.0.1:8000/media/bank_images/standard_chartered_logo.png'
     MYB = 'http://127.0.0.1:8000/media/bank_images/maybank_logo.png'
-    HLB = 'http://127.0.0.1:8000/media/bank_images/hong_leong.jpg'
+    HLB = 'http://127.0.0.1:8000/media/bank_images/hong_leong_logo.png'
     BEA = 'http://127.0.0.1:8000/media/bank_images/bea_logo.png'
     OCBC = 'http://127.0.0.1:8000/media/bank_images/ocbc_logo.png'
     POSB = 'http://127.0.0.1:8000/media/bank_images/posb_logo.png'
-    RHB = 'http://127.0.0.1:8000/media/bank_images/rhb_bank.png'
+    RHB = 'http://127.0.0.1:8000/media/bank_images/rhb_logo.png'
 
     BANK_IMAGE_CHOICES = (
         (DBS, 'DBS'),
